@@ -4,8 +4,11 @@
              xmlns:local="clr-namespace:ReactiveUIExampleXamarinForms"
              x:Class="ReactiveUIExampleXamarinForms.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout Padding="12">
+        <Label Text="Search:" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Entry x:Name="entryField" />
+        <ActivityIndicator x:Name="loadingBar" IsRunning="True"/>
+        <ListView x:Name="resultList"/>
+    </StackLayout>
 
 </ContentPage>
